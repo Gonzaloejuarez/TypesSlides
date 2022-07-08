@@ -1,0 +1,37 @@
+.container{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(251, 251, 251);
+    width: 100%;
+    height: 50rem
+}
+.gridContainer{
+   display: flex;
+   justify-content: space-around;
+}
+
+.firstSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(103, 89, 133);
+    width: 20rem;
+    color: white;
+}
+
+.secondSlide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(89, 124, 133);
+    width: 20rem;
+    color: white;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+}
+

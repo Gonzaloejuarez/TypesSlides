@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import {Link} from 'react-router-dom'
 import './SlideOne.css'
 
 export const SlideOne = ({slides}) => {
@@ -14,21 +15,32 @@ export const SlideOne = ({slides}) => {
  }
 
   return (
+    <div>
+        <Link to='/' >
+            Volver
+        </Link>
     <section className='container'>
-        <span onClick={prevImg}>
+        <span onClick={prevImg} className="botonIzquierdo">
         {"<"}
         </span>
         {
-            slides.map((index) => (
-                <div>
-                    <img src={index.img} alt="" />
+            slides.map((slide,index) => (
+                
+                <div
+                className={index === elemento ? "slide abierto" : " slide "}
+                >
+                    { index === elemento && (
+                        <img src={slide.img} alt="" className='image'/>
+                        )
+                    }
                 </div>
             ))
         }
-        <span onClick={nextImg}>
+        <span onClick={nextImg} className="botonDerecho">
         {">"}
         </span>
     </section>
+    </div>
   )
 }
 
