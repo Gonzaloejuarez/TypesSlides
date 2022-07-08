@@ -5,8 +5,10 @@ import styles from './Home.module.css'
 
 export const Home = () => {
   return (
+    <section className={styles.section1}>
     <div  className={styles.container}>
        <h1> Bienvenidos </h1>
+       <div className={styles.containerDo}>
         <div className={styles.gridContainer}>
             <section className={styles.firstSlide}>
                 <Link to='/slideOne'className={styles.links} >
@@ -19,7 +21,9 @@ export const Home = () => {
                 </Link>
             </section>
         </div>
+       </div>
     </div>
+    </section>
   )
 }
 

@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import Punto from './Punto';
+import {Link} from 'react-router-dom'
 import { Slide } from '../../Utils/Data';
 import styles from './SlideTwo.module.css'
 
@@ -26,6 +27,7 @@ useEffect(() => {
 
   return (
     <div >
+        <Link to="/" className='link'>Volver</Link>
         <section className={styles.containertwo}>
         <span onClick={prevButton} className="botonIzquierdo">
             {"<"}

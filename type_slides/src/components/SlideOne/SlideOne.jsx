@@ -16,7 +16,7 @@ export const SlideOne = ({slides}) => {
 
   return (
     <div>
-        <Link to='/' >
+        <Link to='/' className='link' >
             Volver
         </Link>
     <section className='container'>
